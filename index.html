@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-dark>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,6 +15,35 @@
     <script src="scripts/main.js" type="module"></script>
   </head>
   <body>
-    <h1>Mi pagina</h1>
+    <header class="header">
+      <div class="header__content">
+        <h1>Mi pagina</h1>
+      </div>
+    </header>
+    <main class="main">
+      <article>
+        <h1>Repositorios</h1>
+        <div class="repositores"></div>
+      </article>
+    </main>
+    <button class="btn btn-darkmode">
+      <img
+        class="dynamic-icon btn-darkmode__icon"
+        src="assets/icons/moon.svg"
+      />
+    </button>
+    <footer class="footer"></footer>
+
+    <template class="card__template">
+      <section class="card">
+        <h2 class="card__title">Digital clock</h2>
+        <p><a class="card__website" href="#" target="_blank">Sitio web</a></p>
+        <p>
+          <a class="card__repository" href="#" target="_blank">Repositorio</a>
+        </p>
+        <p>Creado el: <span class="card__created"></span></p>
+        <p>Ultima actualizacion: <span class="card__updated"></span></p>
+      </section>
+    </template>
   </body>
 </html>
