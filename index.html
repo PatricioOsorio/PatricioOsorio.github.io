@@ -13,25 +13,66 @@
       rel="stylesheet"
     />
     <script src="scripts/main.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/56d0ffeffa.js"
+      async
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
       <div class="header__content">
-        <h1>Mi pagina</h1>
+        <h1>Patricio</h1>
       </div>
+      <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+        <button class="btn-darkmode filter-invert">
+          <img
+            class="dynamic-icon btn-darkmode__icon"
+            src="assets/icons/moon.svg"
+          />
+        </button>
+      </nav>
     </header>
     <main class="main">
-      <article>
-        <h1>Repositorios</h1>
+      <div class="hero">
+        <div class="hero__info">
+          <p>Hi, I'am <span class="focus">Patricio Osorio</span> programmer</p>
+          <button href="#" class="btn">Contact</button>
+          <div class="hero__icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/PatricioOsorio" target="_blak"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <div class="blob">
+            <img src="assets/images/blob.svg" alt="blob image" />
+          </div>
+        </div>
+      </div>
+      <section id="about">
+        <h2>Acerca</h2>
         <div class="repositores"></div>
-      </article>
+      </section>
+      <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="repositores"></div>
+      </section>
+      <section id="works">
+        <h2>Trabajos</h2>
+        <div class="repositores"></div>
+      </section>
+      <section id="contact">
+        <h2>Contacto</h2>
+        <div class="repositores"></div>
+      </section>
     </main>
-    <button class="btn btn-darkmode">
-      <img
-        class="dynamic-icon btn-darkmode__icon"
-        src="assets/icons/moon.svg"
-      />
-    </button>
     <footer class="footer"></footer>
 
     <template class="card__template">
