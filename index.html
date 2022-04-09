@@ -4,15 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patricio Miguel Osorio Osorio</title>
+    <!-- Fuente de google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="/styles/normalize-8.0.1-min.css" />
-    <link rel="stylesheet" href="styles/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="/styles/normalize-8.0.1-min.css" />
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- Script propio -->
     <script src="scripts/main.js" type="module"></script>
+    <!-- Script fontawesome -->
     <script
       src="https://kit.fontawesome.com/56d0ffeffa.js"
       async
@@ -21,69 +26,119 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__content">
+      <div class="header__brand">
         <h1>Patricio</h1>
       </div>
-      <nav class="menu">
+      <nav class="header__nav">
         <a href="#">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#works">Works</a>
         <a href="#contact">Contact</a>
-        <button class="btn-darkmode filter-invert">
+        <button class="btn__darkmode">
           <img
-            class="dynamic-icon btn-darkmode__icon"
+            class="dynamic-icon btn__darkmode-icon"
             src="assets/icons/moon.svg"
           />
         </button>
       </nav>
     </header>
+
     <main class="main">
+
       <div class="hero">
         <div class="hero__info">
           <p>Hi, I'am <span class="focus">Patricio Osorio</span> programmer</p>
-          <button href="#" class="btn">Contact</button>
+          <a href="#contact" class="btn">Contact</a>
           <div class="hero__icons">
             <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/PatricioOsorio" target="_blak"
+            <a href="https://github.com/PatricioOsorio" target="_blank"
               ><i class="fab fa-github"></i
             ></a>
           </div>
         </div>
+
         <div class="hero__image">
           <div class="blob">
             <img src="assets/images/blob.svg" alt="blob image" />
           </div>
         </div>
       </div>
+
       <section id="about">
-        <h2>Acerca</h2>
-        <div class="repositores"></div>
+        <h2>About</h2>
+        <p>
+          Programador de software, con enfoque en el desarrollo de sistemas web,
+          usando buenas prácticas y diversas tecnologías como: patrones de
+          diseño (MVC, MVD), programación estructurada, orientada a objetos y
+          funcional, sistemas control de versiones (GitHub), manejo de bases de
+          datos relacionales y no relacionales. Con facilidad y adaptabilidad
+          para aprender nuevas tecnologías. Además de buenas habilidades de
+          colaboración dentro de un equipo de trabajo.
+        </p>
       </section>
+
       <section id="skills">
-        <h2>Habilidades</h2>
-        <div class="repositores"></div>
+        <h2>Skills</h2>
+        <h3>Lenguajes de programacion</h3>
+        <ul>
+          <li>JavaScript</li>
+          <li>C#</li>
+          <li>PHP</li>
+          <li>Python</li>
+        </ul>
+
+        <h3>Desarrollo web frontend</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>React (principiante)</li>
+        </ul>
+
+        <h3>Bases de datos</h3>
+        <ul>
+          <li>MySql</li>
+          <li>Microsoft SQL Server</li>
+          <li>MongoDB</li>
+        </ul>
+
+        <h3>Otras tecnologias</h3>
+        <ul>
+          <li>Node.js</li>
+          <li>Git</li>
+          <li>Arduino</li>
+        </ul>
       </section>
+
       <section id="works">
-        <h2>Trabajos</h2>
+        <h2>Works</h2>
         <div class="repositores"></div>
       </section>
+
       <section id="contact">
-        <h2>Contacto</h2>
-        <div class="repositores"></div>
+        <h2>Contact</h2>
+        <p>
+          <a href="mailto:PatricioMiguel_12@hotmail.com"
+            >PatricioMiguel@hotmail.com</a
+          >
+        </p>
+        <p>282 101 2041</p>
+        <address>
+          <p>Chulavista, Puebla, Mexico</p>
+        </address>
       </section>
     </main>
-    <footer class="footer"></footer>
 
     <template class="card__template">
       <section class="card">
-        <h2 class="card__title">Digital clock</h2>
-        <p><a class="card__website" href="#" target="_blank">Sitio web</a></p>
-        <p>
-          <a class="card__repository" href="#" target="_blank">Repositorio</a>
-        </p>
+        <h3 class="card__title"></h3>
+        <p><a class="card__website" target="_blank">Sitio web</a></p>
+        <p><a class="card__repository" target="_blank">Repositorio</a></p>
         <p>Creado el: <span class="card__created"></span></p>
         <p>Ultima actualizacion: <span class="card__updated"></span></p>
+        <p>Lenguaje principal: <span class="card__language"></span></p>
       </section>
     </template>
   </body>
