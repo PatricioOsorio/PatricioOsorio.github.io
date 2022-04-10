@@ -7,24 +7,30 @@ export default function darkMode() {
 
   const localConfig = localStorage.getItem('theme');
 
-  const changeColorIcons = () => {
-    $dynamicIcons.forEach((element) => {
-      element.classList.toggle('filter-invert');
-    });
+  const changeColorIcons = (state) => {
+    if (state === 'dark') {
+      $dynamicIcons.forEach((element) => {
+        element.classList.add('filter-invert');
+      });
+    } else {
+      $dynamicIcons.forEach((element) => {
+        element.classList.remove('filter-invert');
+      });
+    }
   };
 
   const lightMode = () => {
     $dataDark.classList.remove('dark-mode');
     $btnDarkmodeIcon.src = '/assets/icons/moon.svg';
     localStorage.setItem('theme', 'light');
-    changeColorIcons();
+    changeColorIcons('light');
   };
 
   const darkMode = () => {
     $dataDark.classList.add('dark-mode');
     $btnDarkmodeIcon.src = '/assets/icons/sun.svg';
     localStorage.setItem('theme', 'dark');
-    changeColorIcons();
+    changeColorIcons('dark');
   };
 
   d.addEventListener('DOMContentLoaded', (e) => {
