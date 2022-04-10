@@ -15,14 +15,14 @@ export default function darkMode() {
 
   const lightMode = () => {
     $dataDark.classList.remove('dark-mode');
-    $btnDarkmodeIcon.src = '../assets/icons/moon.svg';
+    $btnDarkmodeIcon.src = '/assets/icons/moon.svg';
     localStorage.setItem('theme', 'light');
     changeColorIcons();
   };
 
   const darkMode = () => {
     $dataDark.classList.add('dark-mode');
-    $btnDarkmodeIcon.src = '../assets/icons/sun.svg';
+    $btnDarkmodeIcon.src = '/assets/icons/sun.svg';
     localStorage.setItem('theme', 'dark');
     changeColorIcons();
   };
